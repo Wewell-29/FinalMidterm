@@ -1,0 +1,169 @@
+
+
+#Home h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#Feature {
+    padding-bottom: 5px;
+
+}
+
+#Feature h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#Gallery {
+    background-color: #ffffff;
+    color: #fff;
+}
+#Gallery .card {
+    background-color: #2c2c2c;
+    border: none;
+    margin: 10px;
+}
+
+#Gallery .card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+#Gallery .card:hover {
+    transform: scale(1.05);
+}
+
+#Shop {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+  }
+
+  #Shop .card{
+    color: #5f5b5b;
+  }
+  
+  #Shop  h1,
+  #Shop  h3,
+  #Shop  h4,
+  #Shop  h5,
+  #Shop  h6 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #Shop  .font-weight-medium {
+    font-weight: 500;
+  }
+
+  #Shop  .font-14 {
+    font-size: 14px;
+  }
+  
+  #Shop  .font-13 {
+    font-size: 13px;
+  }
+  
+
+  #Shop  .text-success {
+    color: #2cdd9b !important;
+  }
+  
+#Shop  .price small {
+    color: #8d97ad;
+    font-size: 16px;
+  }
+  
+  #Shop h5 {
+    line-height: 22px;
+    font-size: 18px;
+  }
+  #Shop  a {
+    background: #ff4d7e;
+
+  }
+  
+   #Shop a:hover {
+    background:  #218838;
+
+  }
+  
+  #Shop .btn-md {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+
+
+
+  #foot {
+    background-color: #343a40;
+    padding: 20px 0;
+  }
+
+  #foot h2 {
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  
+  #foot h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffc107;
+
+  }
+  
+  #foot p {
+    font-size: 16px;
+  }
+
+#Reviews h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+
+}
+
+#Reviews .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#Reviews .card {
+    width: 18rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+#Reviews .card:hover {
+    transform: scale(1.25);
+}
+
+#Reviews .card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+#Reviews .card-body {
+    padding: 5px;
+}
+
+#Reviews .card-text {
+    font-size: 14px;
+    color: #333;
+}
+
+
+#Reviews .star-rating {
+    font-size: 16px;
+    color: gold;
+    margin-bottom: 10px; 
+}
+
+
+  
