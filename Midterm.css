@@ -10,6 +10,11 @@
 
 }
 
+#Feature .card:hover {
+transform: scale(1.10);
+  
+}
+
 #Feature h1{
     font-family: 'Times New Roman', Times, serif;
 
@@ -29,9 +34,6 @@
     height: 400px;
     object-fit: cover;
 }
-#Gallery .card:hover {
-    transform: scale(1.05);
-}
 
 #Shop {
     font-family: "Montserrat", sans-serif;
@@ -41,6 +43,10 @@
 
   #Shop .card{
     color: #5f5b5b;
+  }
+
+  #Shop .card:hover{
+    transform: scale(1.10);
   }
   
   #Shop  h1,
@@ -78,43 +84,32 @@
     line-height: 22px;
     font-size: 18px;
   }
-  #Shop  a {
+  #Shop  button {
     background: #ff4d7e;
 
   }
   
-   #Shop a:hover {
+   #Shop button:hover {
     background:  #218838;
 
   }
   
-  #Shop .btn-md {
+  #Shop button {
     padding: 10px 25px;
     font-size: 16px;
   }
 
-
-
-
-  #foot {
-    background-color: #343a40;
-    padding: 20px 0;
-  }
-
-  #foot h2 {
-    font-family: 'Times New Roman', Times, serif;
-    
-  }
   
-  #foot h4 {
-    font-weight: 400;
-    font-size: 18px;
-    color: #ffc107;
 
-  }
+
   
   #foot p {
     font-size: 16px;
+  }
+
+  #foot img {
+   height: 180px;
+   width: 300px;
   }
 
 #Reviews h1{
@@ -127,8 +122,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 10px;
+    padding: 50px;
+    padding-left: 60px;
 }
 
 #Reviews .card {
@@ -145,8 +141,8 @@
 }
 
 #Reviews .card-img-top {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
 }
 
 #Reviews .card-body {
@@ -165,5 +161,172 @@
     margin-bottom: 10px; 
 }
 
+#checkoutModal .container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+  }
+  
+#checkoutModal hr {
+    height: 1px;
+    background-color: #2e2e2e;
+    border: none;
+  }
+  
+#checkoutModal .card {
+    width: 400px;
+    background: #1b1b1b;
+    box-shadow:
+      0px 187px 75px rgba(0, 0, 0, 0.01),
+      0px 105px 63px rgba(0, 0, 0, 0.05),
+      0px 47px 47px rgba(0, 0, 0, 0.09),
+      0px 12px 26px rgba(0, 0, 0, 0.1),
+      0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+#checkoutModal .title {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #2e2e2e;
+    font-weight: 700;
+    font-size: 11px;
+    color: #ffffff; 
+  }
+  
+ 
+#checkoutModal .cart {
+    border-radius: 19px 19px 0px 0px;
+  }
+  
+#checkoutModal.cart .steps {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #checkoutModal .cart .steps .step {
+    display: grid;
+    gap: 10px;
+  }
+  
+  #checkoutModal .cart .steps .step span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  #checkoutModal .cart .steps .step p {
+    font-size: 11px;
+    font-weight: 600;
+    color: #bbbbbb;
+  }
+  
+ 
+  #checkoutModal .promo form {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    gap: 10px;
+    padding: 0px;
+  }
+  
+  #checkoutModal .input_field {
+    width: auto;
+    height: 36px;
+    padding: 0 0 0 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #2e2e2e; 
+    background-color: #333333; 
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  #checkoutModal .input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #555555; 
+    background-color: #333333;
+  }
+  
+  #checkoutModal .promo form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background: #555555; 
+    box-shadow:
+      0px 0.5px 0.5px #555555,
+      0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff; 
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+
+  #checkoutModal .payments .details {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    padding: 0px;
+    gap: 5px;
+  }
+  
+  #checkoutModal .payments .details span:nth-child(odd) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff; 
+  }
+  
+  #checkoutModal .payments .details span:nth-child(even) {
+    font-size: 13px;
+    font-weight: 600;
+    color: #bbbbbb; 
+  }
+  
+  #checkoutModal .checkout .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    background-color: #2e2e2e; 
+  }
+  
+  #checkoutModal  .price {
+    font-size: 22px;
+    color: #ffffff; 
+    font-weight: 900;
+  }
+  
+  #checkoutModal  .checkout .checkout-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    background: #555555; 
+    border-radius: 7px;
+    border: 1px solid #2e2e2e; 
+    color: #ffffff; 
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  #checkoutModal .checkout .checkout-btn:hover {
+    background-color: #777777; 
+  }
 
   
